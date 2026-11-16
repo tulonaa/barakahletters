@@ -201,6 +201,16 @@ body.r-resources #resources,body.r-about #about{padding-top:150px;min-height:70v
 .lc .p{color:var(--mut)!important;font-family:Inter,system-ui,sans-serif!important;font-size:15px!important;line-height:1.7!important}
 .lc .ccr,.lc .ccr i{color:#63d3ee!important;-webkit-text-fill-color:#63d3ee!important}
 .lc .m{font-family:Inter,system-ui,sans-serif}
+
+/* about: photo height = text height */
+.who{align-items:stretch!important}
+.who img{width:100%!important;height:100%!important;contain:size;aspect-ratio:auto!important;object-fit:cover;object-position:center 20%;align-self:stretch}
+.who>div{align-self:center}
+.who img{transform:none!important;translate:none!important}
+@media (max-width:860px){.who img{contain:none;height:auto!important;aspect-ratio:4/5!important;max-height:480px}}
+
+.lsub{max-width:none!important;white-space:nowrap}
+@media (max-width:700px){.lsub{white-space:normal;max-width:34em!important}}
 /* keep the original black palette */
 .orb{display:none!important}#cg{background:radial-gradient(circle,rgba(216,207,188,.06),transparent 65%)}.sp{color:#d8cfbc!important}.cf{color:#d8cfbc!important}.card:before{background:radial-gradient(260px circle at var(--mx,50%) var(--my,30%),rgba(216,207,188,.07),transparent 70%)}.cta{background:radial-gradient(ellipse 50% 70% at 50% 100%,rgba(86,84,73,.4),transparent 70%)}.im:hover{box-shadow:0 20px 50px rgba(0,0,0,.6),0 0 0 1px #d8cfbc}.card:hover{box-shadow:none}.exb:hover{box-shadow:none}
 /* resources */
